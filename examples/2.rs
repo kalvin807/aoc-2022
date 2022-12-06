@@ -69,7 +69,7 @@ fn get_score_2(ln: String) -> i32 {
 
 fn main() -> std::io::Result<()> {
     let mut path = env::current_dir()?;
-    path.push("examples/2");
+    path.push("inputs/actual/2");
     println!("reading path: {}", path.display());
     let file = File::open(path)?;
     let lines = io::BufReader::new(file).lines();

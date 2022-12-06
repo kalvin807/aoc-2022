@@ -59,7 +59,7 @@ fn part2(file: &File) -> std::io::Result<()> {
 
 fn main() {
     let mut path = env::current_dir().unwrap();
-    path.push("examples/3");
+    path.push("inputs/actual/3");
     println!("reading path: {}", path.display());
     let mut file = File::open(path).unwrap();
 

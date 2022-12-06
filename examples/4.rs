@@ -43,7 +43,7 @@ fn partial_overlap(ln: String) -> u32 {
 
 fn main() {
     let mut path = env::current_dir().unwrap();
-    path.push("examples/4");
+    path.push("inputs/actual/4");
     println!("reading path: {}", path.display());
     let mut file = File::open(path).unwrap();
     let lines = io::BufReader::new(&file).lines();

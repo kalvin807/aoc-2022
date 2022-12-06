@@ -121,7 +121,7 @@ fn run_actions(mut state: State, actions_str: Vec<String>) -> State {
 
 fn main() {
     let mut path = env::current_dir().unwrap();
-    path.push("examples/5-input");
+    path.push("inputs/actual/5");
     println!("reading path: {}", path.display());
     let file = File::open(path).unwrap();
     let lines = io::BufReader::new(&file).lines().flatten();
