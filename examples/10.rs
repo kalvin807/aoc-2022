@@ -85,7 +85,7 @@ fn runner(path: &str) -> i64 {
 }
 
 fn main() {
-    let path = "inputs/actual/9";
+    let path = "inputs/actual/10";
     println!("Part1: {:?}", runner(path));
 }
 
@@ -93,7 +93,7 @@ fn main() {
 mod tests {
     #[test]
     fn test_part1() {
-        let path = "inputs/test/9";
+        let path = "inputs/test/10";
         let res = super::runner(path);
         assert_eq!(res, 13140);
     }
